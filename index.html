@@ -469,8 +469,46 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>
-          <img src="./images/Vector.svg" alt="" />
+          <img src="./images/vector.svg" alt="" />
         </button>
+        <form class="modal-form" action="">
+          <p class="modal-form-p">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-field last">
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div role="group">
+            <input
+              class="policy-checkbox"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            <label class="policy" for="policy"
+              >Соглашаюсь с рассылкой и принимаю&nbsp
+              <a class="policy-link" href="">Условия договора</a></label
+            >
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
