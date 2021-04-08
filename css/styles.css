@@ -587,7 +587,7 @@ footer li:last-child {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--back-light-color); 
+  color: var(--back-light-color);
 
   padding-bottom: 20px;
 }
@@ -596,7 +596,11 @@ footer li:last-child {
   display: flex;
 }
 
-.mailing-items input{
+.mailing-items input {
+  color: var(--back-light-color);
+}
+
+.mailing-items input {
   padding-left: 16px;
   height: 50px;
   width: calc(100% - 216px);
@@ -609,7 +613,7 @@ footer li:last-child {
   border-radius: 4px;
 }
 
-.mailing-items button{
+.mailing-items button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -630,16 +634,14 @@ footer li:last-child {
 }
 
 .mailing-items button::after {
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
   margin-left: 10px;
 
   background-image: url(/images/send.svg);
   background-repeat: no-repeat;
-
 }
-  
 
 /*------------------*/
 /* Backdrop styles */
@@ -700,6 +702,20 @@ footer li:last-child {
   justify-content: center;
 }
 
+.modal-close-icon {
+  width: 11px;
+  height: 11px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon {
+  fill: var(--highlight-color);
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -726,7 +742,7 @@ footer li:last-child {
   margin-bottom: 10px;
 }
 
-.form-field + .last{
+.form-field + .last {
   margin-bottom: 20px;
 }
 
@@ -746,7 +762,7 @@ footer li:last-child {
   margin: 0;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 26px;   /* регулирую отступ от края инпута что б не перекрывать текст иконкой*/
+  padding-left: 40px; /* регулирую отступ от края инпута что б не перекрывать текст иконкой*/
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -883,7 +899,6 @@ footer li:last-child {
 }
 
 .projects-button {
-
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -935,7 +950,7 @@ footer li:last-child {
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
