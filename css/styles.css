@@ -731,27 +731,34 @@ footer li:last-child {
 }
 
 .form-field label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--link-p-text-color);
+
   margin-bottom: 4px;
 }
 
 .form-field input {
+  width: 100%;
   margin: 0;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 12px;
+  padding-left: 26px;   /* регулирую отступ от края инпута что б не перекрывать текст иконкой*/
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-.form-field input::placeholder {
+.form-field textarea::placeholder {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.66;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -760,6 +767,37 @@ footer li:last-child {
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
+}
+
+.icon-group-border:focus {
+  border: 1px solid var(--highlight-color);
+  outline: none;
+}
+
+.icon-group-border:focus + .form-field-icon {
+  fill: var(--highlight-color);
+}
+
+.icon-group-border,
+.form-field-icon {
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-group {
+  width: 100%;
+  position: relative;
+}
+
+.form-field-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(12px, -50%);
+  /* fill: red; */
 }
 
 .policy {
