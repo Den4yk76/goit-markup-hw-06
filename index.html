@@ -79,7 +79,7 @@
       <!-- about -->
       <section class="about">
         <div class="container">
-          <h2 hidden>О нас</h2>
+          <h2 class="visually-hidden">О нас</h2>
           <ul class="about-list">
             <li class="thumb icon-antenna">
               <!-- <div class="thumb">
@@ -530,9 +530,10 @@
             ></textarea>
           </div>
           <div role="group">
-            <input type="checkbox" name="policy" id="policy" />
-            <label class="policy" for="policy"
-              >Соглашаюсь с рассылкой и принимаю&nbsp
+            <label class="policy">
+              <input class="checkbox" type="checkbox" id="policy" />
+              <span class="checkbox-icon"></span>
+              Соглашаюсь с рассылкой и принимаю&nbsp
               <a class="policy-link" href="">Условия договора</a></label
             >
           </div>

@@ -30,6 +30,17 @@ html {
   /* outline: 2px solid tomato; */
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -813,11 +824,41 @@ footer li:last-child {
   top: 50%;
   left: 0;
   transform: translate(12px, -50%);
-  /* fill: red; */
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border: 2px solid var(--highlight-color);
+  background-color: var(--highlight-color);
+  background-image: url(/images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .policy {
   display: inline-flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
