@@ -798,7 +798,6 @@ footer li:last-child {
 
 .icon-group-border:focus {
   border: 1px solid var(--highlight-color);
-  outline: none;
 }
 
 .icon-group-border:focus + .form-field-icon {
@@ -846,6 +845,10 @@ footer li:last-child {
 
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
+
+  transition-property:  border, background-color, background-image;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .checkbox-icon {
