@@ -600,7 +600,7 @@ footer li:last-child {
   text-transform: uppercase;
   color: var(--back-light-color);
 
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .mailing-items {
@@ -790,6 +790,7 @@ footer li:last-child {
 }
 
 .form-field textarea {
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -846,9 +847,11 @@ footer li:last-child {
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
 
-  transition-property:  border, background-color, background-image;
+  transition-property: border, background-color, background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -859,6 +862,12 @@ footer li:last-child {
   background-origin: border-box;
 }
 
+.policy-group {
+  display: flex;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
 .policy {
   display: inline-flex;
   align-items: center;
@@ -866,7 +875,6 @@ footer li:last-child {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--link-p-text-color);
-  margin-bottom: 30px;
 }
 
 .policy-link {
@@ -1014,7 +1022,8 @@ footer li:last-child {
   color: var(--back-light-color);
 }
 
-.card:hover .card-caption {
+.card:hover .card-caption,
+.card:focus .card-caption {
   transform: translateY(-100%);
 }
 
