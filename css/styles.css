@@ -730,7 +730,7 @@ footer li:last-child {
 .modal-form {
   display: flex;
   flex-direction: column;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   padding: 40px;
 }
 
